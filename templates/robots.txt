@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+Allow: /tools/
+Allow: /courses/
+Allow: /python/
+Allow: /books/
+Allow: /contact/
+
+Allow: /set-language/
+Allow: /search/
+
+Disallow: /static/
+Disallow: /media/
+
+Sitemap: https://domain.com/sitemap.xml

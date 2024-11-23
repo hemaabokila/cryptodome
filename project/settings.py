@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'courses',
     'python',
     'tools',
@@ -61,6 +62,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'widget_tweaks',
+    
 ]
 from django.utils.translation import gettext_lazy as _
 MIDDLEWARE = [

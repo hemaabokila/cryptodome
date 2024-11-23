@@ -1,0 +1,864 @@
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 145
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104640
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('courses')
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'courses' not found. 'courses' is not a valid view function or pattern name.
+"GET /sitemap.xml HTTP/1.1" 500 104673
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('course_videos')
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_videos' with no arguments not found. 1 pattern(s) tried: ['en/courses/course/(?P<course_slug>[-a-zA-Z0-9_]+)/videos/\\Z']
+"GET /sitemap.xml HTTP/1.1" 500 106833
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 22, in location
+    return reverse('course_videos')
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_videos' with no arguments not found. 1 pattern(s) tried: ['en/courses/course/(?P<course_slug>[-a-zA-Z0-9_]+)/videos/\\Z']
+"GET /sitemap.xml HTTP/1.1" 500 106833
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 29, in location
+    return reverse('video_detail')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'video_detail' with no arguments not found. 1 pattern(s) tried: ['en/courses/course/(?P<course_slug>[-a-zA-Z0-9_]+)/video/(?P<video_slug>[-a-zA-Z0-9_]+)/\\Z']
+"GET /sitemap.xml HTTP/1.1" 500 108868
+Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+           ^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\src\home\sitemaps.py", line 29, in location
+    return reverse('video_detail')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hema\OneDrive\Desktop\website\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'video_detail' with no arguments not found. 1 pattern(s) tried: ['en/courses/course/(?P<course_slug>[-a-zA-Z0-9_]+)/video/(?P<video_slug>[-a-zA-Z0-9_]+)/\\Z']
+"GET /sitemap.xml HTTP/1.1" 500 108868
