@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% load static %}
+{% block body %}
+<div class="container mt-5">
+    <div class="section2">
+        <div class="container2">
+            <h2 class="section-title">{% trans "Hacking Tools" %}</h2>
+            <div class="row g-4">
+                {% for tool in tools %}
+                <div class="col-6 col-md-3">
+                    <a href="{{ tool.url }}" class="custom-link" >
+                    <div class="icon-card">
+                        <img src="{{ tool.image.url }}" alt="{{ tool.name }}">
+                        <p class="card-text">{{ tool.name }}</p>
+                        <p>{{ tool.description|truncatechars:100}}</p>
+                    </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

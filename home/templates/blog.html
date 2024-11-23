@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container mt-5">
+    <div class="section2">
+        <div class="container2 " >  
+            <h1 class="section-title">{{ blogs.title }}</h1>  
+                <div>
+                    <img src="{{ blog.image.url }}" class="custom-image" alt="Blog {{ Blog.slug }}">
+                    <pre><code class="language-python" >{{ blog.sub_title }}</code></pre>
+                    <pre ><code class="language-python">{{ blog.description }}</code></pre>
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

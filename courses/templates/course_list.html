@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% csrf_token %}
+{% block body %}
+<div class="container mt-5 content">
+    <div class="section2">
+        <div class="container2">
+            <h1 class="section-title">{% trans "Courses" %}</h1>
+            <div class="row g-4">
+            {% for course in courses %}
+                <div class="col-6 col-md-3">
+                    <a href="{% url 'course_videos' course.slug %}" class="custom-link">
+                        <div class="icon-card p-3">
+                            <img src="{{ course.image.url }}" alt="{{ course.name }}">
+                            <p>{{ course.name }}</p>
+                        </div>
+                    </a>
+                </div>
+            {% empty %}
+            <p>{% trans "There are no courses currently available." %}</p>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

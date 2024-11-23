@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block body %}
+<div class="container mt-5">
+    <div class="section2">
+        <div class="container2">
+            <h1 class="section-title">{% trans "Books" %}</h1>
+        <div class="row">
+            {% for book in books %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ book.title }}</h5>
+                        <p class="card-text">{{ book.name }}</p>
+                        <a class="btn btn-success" href="{{ book.file.url }}" download>
+                            {% trans "Download PDF" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

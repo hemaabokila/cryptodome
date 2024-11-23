@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-21 17:09+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\project\settings.py:73
+msgid "English"
+msgstr "English"
+
+#: .\project\settings.py:74
+msgid "Arabic"
+msgstr "Arabic"
+
+#: .\project\settings.py:XX
+msgid "Books"
+msgstr "Books"
+
+#: .\project\settings.py:XX
+msgid "Tools"
+msgstr "Tools"
+
+#: .\project\settings.py:XX
+msgid "Python"
+msgstr "Python"
+
+#: .\project\settings.py:XX
+msgid "Codes"
+msgstr "Codes"
+
+#: .\project\settings.py:XX
+msgid "Top Libraries"
+msgstr "Top Libraries"
+
+#: .\project\settings.py:XX
+msgid "Courses"
+msgstr "Courses"
+
+#: .\project\settings.py:XX
+msgid "All Rights Reserved"
+msgstr "All Rights Reserved"
+
+#: .\project\settings.py:XX
+msgid "Search Results"
+msgstr "Search Results"
+
+#: .\project\settings.py:XX
+msgid "Next"
+msgstr "Next"
+
+#: .\project\settings.py:XX
+msgid "Page"
+msgstr "Page"
+
+#: .\project\settings.py:XX
+msgid "Previous"
+msgstr "Previous"
+
+#: .\project\settings.py:XX
+msgid "No results match your search."
+msgstr "No results match your search."
+
+#: .\project\settings.py:XX
+msgid "Hacking Tools"
+msgstr "Hacking Tools"
+
+#: .\project\settings.py:XX
+msgid "Our Visitors Today"
+msgstr "Our Visitors Today"
+
+#: .\project\settings.py:XX
+msgid "Latest Videos"
+msgstr "Latest Videos"
+
+#: .\project\settings.py:XX
+msgid "Articles"
+msgstr "Articles"
+
+#: .\project\settings.py:XX
+msgid "Read More"
+msgstr "Read More"
+
+#: .\project\settings.py:XX
+msgid "Download PDF"
+msgstr "Download PDF"
+
+#: .\project\settings.py:XX
+msgid "Video Summary"
+msgstr "Video Summary"
+
+#: .\project\settings.py:XX
+msgid "Task"
+msgstr "Task"
+
+#: .\project\settings.py:XX
+msgid "Support Me"
+msgstr "Support Me"
+
+#: .\project\settings.py:XX
+msgid "To support me via Vodafone Cash, please transfer to the following number."
+msgstr "To support me via Vodafone Cash, please transfer to the following number."
+
+#: .\project\settings.py:XX
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: .\project\settings.py:XX
+msgid "Name"
+msgstr "Name"
+
+#: .\project\settings.py:XX
+msgid "Email"
+msgstr "Email"
+
+#: .\project\settings.py:XX
+msgid "Subject"
+msgstr "Subject"
+
+#: .\project\settings.py:XX
+msgid "Message"
+msgstr "Message"
+
+#: .\project\settings.py:XX
+msgid "Send"
+msgstr "Send"
+
+#: .\project\settings.py:XX
+msgid "Thank you"
+msgstr "Thank you"
+
+#: .\project\settings.py:XX
+msgid "Language"
+msgstr "Language"
+
+#: .\project\settings.py:XX
+msgid "There are no courses currently available."
+msgstr "There are no courses currently available."
+
+#: .\project\settings.py:XX
+msgid "Contact"
+msgstr "Contact"
+#: .\project\settings.py:XX
+msgid "YouTube subscribers count"
+msgstr "YouTube subscribers count"
+
+#: .\project\settings.py:XX
+msgid "YouTube views count"
+msgstr "YouTube views count"
+
+#: .\project\settings.py:XX
+msgid "Today's website visitors"
+msgstr "Today's website visitors"
+
+#: .\project\settings.py:XX
+msgid "Download Video"
+msgstr "Download Video"
+
+#: .\project\settings.py:XX
+msgid "There are no videos for this course currently available."
+msgstr "There are no videos for this course currently available."
+
+#: .\project\settings.py:XX
+msgid "Your message has been sent successfully. We will get back to you as soon as possible."
+msgstr "Your message has been sent successfully. We will get back to you as soon as possible."

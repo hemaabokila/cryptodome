@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% csrf_token %}
+{% block body %}
+<div class="container mt-5 content">
+    <div class="section2">
+        <div class="container2"><h1 class="section-title">{{ course.name }}</h1>
+            <div class="row">
+                {% for video in videos %}
+                {% if video.course.category.name == "outYouTube" %}
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="{{ video.image.url }}" class="card-img-top" alt="Video {{ video.slug }}">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ video.name }}</h5>
+                                    <p class="card-text">{{ video.title }}</p>
+                                    <a class="btn btn-success" href="{{ video.youtube_url }}">
+                                        {% trans "Download Video" %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="{{ video.image.url }}" class="card-img-top" alt="Video {{ video.slug }}">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ video.name }}</h5>
+                                    <p class="card-text">{{ video.title }}</p>
+                                    <a href="{% url 'video_detail' course.id video.slug %}" class="btn btn-primary">شاهد الآن</a>
+                                </div>
+                            </div>
+                        </div> 
+                    {% endif %}
+                {% empty %}
+                <h1><p>{% trans "There are no videos for this course currently available." %}</p></h1>
+                {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock body %}

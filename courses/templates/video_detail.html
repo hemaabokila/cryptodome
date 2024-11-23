@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% csrf_token %}
+{% block body %}
+<div class="container mt-5 content">
+    <div class="section2">
+        <div class="container2"><h1 class="section-title">{{ video.title }}</h1>
+            <div class="ratio ratio-16x9 mb-4">
+                <iframe 
+                    src="https://www.youtube.com/embed/{{ video.video_url }}"
+                    title="{{ video.title}}"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        {% if video.description %}
+        <h3 class="btn btn-secondary">{% trans "Video Summary" %}</h3>
+        <code>
+            <pre><code class="language-python">
+                <p>
+                    {{ video.description }}
+                </p>
+            </code></pre>
+        </code>
+        {% endif %}
+
+        {% if video.python_code %}
+        <div class="code-container mt-4">
+            <h3 class="btn btn-secondary">Python code</h3>
+            <pre><code class="language-python">
+                {{ video.python_code }}
+            </code></pre>
+        </div>
+        {% endif %}
+        
+        {% if video.cpp_code %}
+        <div class="code-container mt-4">
+            <h3 class="btn btn-secondary">C++ code</h3>
+            <pre><code class="language-cpp">
+                {{ video.cpp_code }}
+            </code></pre>
+        </div>
+        {% endif %}
+
+        {% if video.dart_code %}
+        <div class="code-container mt-4">
+            <h3 class="btn btn-secondary">Dart code</h3>
+            <pre><code class="language-dart">
+                {{ video.dart_code }}
+            </code></pre>
+        </div>
+        {% endif %}
+
+        {% if video.json_data %}
+        <div class="code-container mt-4">
+            <h3 class="btn btn-secondary">Json file</h3>
+            <pre><code class="language-dart">
+                {{ video.json_data }}
+            </code></pre>
+        </div>
+        {% endif %}
+
+        {% if video.bash_code %}
+        <div class="code-container mt-4">
+            <h3 class="btn btn-secondary">Bash code</h3>
+            <pre><code class="language-bash">
+                {{ video.bash_code }}
+            </code></pre>
+        </div>
+        {% endif %}
+
+        
+        {% if video.desc %}
+        <div class="code-container mt-4">
+            <h3 class="btn btn-secondary">{% trans "Task" %}</h3>
+            <pre ><code class="language-python">
+                <p>{{ video.desc }}</p>
+            </code></pre>
+        </div>
+        {% endif %}
+        
+    </div>
+</div>
+{% endblock body %}

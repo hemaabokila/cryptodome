@@ -1,0 +1,113 @@
+{% load static %}
+{% load i18n %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cryptodome website</title>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+<body>
+
+<div class="container-fluid d-flex flex-column " style="min-height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand d-flex align-items-center navclass" href="#" >
+            <i class="bi bi-phone me-2 social-icon"></i>
+        </a>
+        <a class="navbar-brand d-flex align-items-center social-icon" href="https://www.youtube.com/@cryptodome22">
+            <i class="fab fa-youtube me-2"></i> 
+            Cryptodome
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link social-icon" href="{% url 'contact'%}">{% trans "Contact" %}</a></li>
+                <li class="nav-item"><a class="nav-link social-icon" href="{% url 'books'%}">{% trans "Books" %}</a></li>
+                <li class="nav-item"><a class="nav-link social-icon" href="{% url 'tool'%}">{% trans "Tools" %}</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  social-icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {% trans "Python" %}
+                    </a>
+                    <ul role="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'python'%}">{% trans "Codes" %}</a></li>
+                        <li><a class="dropdown-item" href="{% url 'library-page'%}">{% trans "Top Libraries" %}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link  social-icon" href="{% url 'course_list'%}">{% trans "Courses" %}</a></li>
+                <li class="nav-item"><a class="nav-link  social-icon" href="{% url 'home'%}">{% trans "Home" %}</a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle social-icon" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {% trans "Language" %}
+                        <i class="bi bi-translate me-2"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="flex-grow-1">
+        {% block body %}
+        {% endblock body %}
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>© 2024 Cryptodome - {% trans "All Rights Reserved" %}</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/ibrahem.abokela" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/@cryptodome22" target="_blank" class="social-icon youtube">
+            <i class="fab fa-youtube fa-lg"></i>
+        </a>
+        <a href="https://github.com/hemaabokila" target="_blank" class="social-icon github">
+            <i class="fab fa-github fa-lg"></i>
+        </a>
+    </div>
+</footer>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script>
+    function changeLanguage(lang) {
+        var form = document.createElement('form');
+        form.method = 'POST';
+        form.action = "{% url 'set_language' %}";
+        var csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    
+        var inputLang = document.createElement('input');
+        inputLang.type = 'hidden';
+        inputLang.name = 'language';
+        inputLang.value = lang;
+        form.appendChild(inputLang);
+    
+        var csrfInput = document.createElement('input');
+        csrfInput.type = 'hidden';
+        csrfInput.name = 'csrfmiddlewaretoken';
+        csrfInput.value = csrfToken;
+        form.appendChild(csrfInput);
+    
+        document.body.appendChild(form);
+        form.submit();
+    }
+</script>
+
+</body>
+</html>

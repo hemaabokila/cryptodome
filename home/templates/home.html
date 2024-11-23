@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% csrf_token %}
+
+{% load static %}
+
+{% block body %}
+<div class="container mt-5">
+    <form class="d-flex ms-auto section2" method="GET" action="{% url 'search' %}">
+        <input type="text" name="q" placeholder="{% trans "Search" %}..." class="form-control" value="{{ request.GET.q }}">
+        <button type="submit" class="btn btn-primary">{% trans "Search" %}</button>
+    </form>
+    <div class="today-visits-value">
+        <p>
+            <i class="fas fa-user-check"></i> 
+            {% trans "Today's website visitors" %}: <span class="counter" data-count="{{ today_visits }}"></span>
+        </p>
+        <p>
+            <i class="fab fa-youtube"></i> 
+            {% trans "YouTube subscribers count" %}: <span class="counter" data-count="{{ subscriber_count }}"></span>
+        </p>
+        <p>
+            <i class="fas fa-eye"></i> 
+            {% trans "YouTube views count" %}: <span class="counter" data-count="{{ view_count }}"></span>
+        </p>
+    </div>
+    <div class="section">
+        <div class="container2">
+            <h1 class="section-title">{% trans "Latest Videos" %}</h1>
+            <div class="row g-4">
+                {% for video in latest_videos %}
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a href="{{ video.youtube_url }}" class="custom-link">
+                                <img src="{{ video.image.url }}" class="card-img-top" alt="Video {{ video.slug }}">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ video.name }}</h5>
+                                    <p class="card-text">{{ video.title }}</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div> 
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <hr class="section-divider">
+        <div class="container2">
+            <h1 class="section-title">{% trans "Courses" %}</h1>
+            <div class="row g-4" >
+                {% for course in latest_courses %}
+                <div class="col-6 col-md-3">
+                    <a href="{% url 'course_videos' course.slug %}" class="custom-link">
+                        <div class="icon-card p-3">
+                            <img src="{{ course.image.url }}" alt="{{ course.name }}">
+                            <p>{{ course.name }}</p>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <hr class="section-divider">
+        <div class="container2">
+            <h1 class="section-title">{% trans "Hacking Tools" %}</h1>
+            <div class="row g-4">
+                {% for tool in latest_tools %}
+                <div class="col-6 col-md-3">
+                    <a href="{{ tool.url }}" class="custom-link">
+                        <div class="icon-card">
+                            <img src="{{ tool.image.url }}" alt="{{ tool.name }}">
+                            <p class="card-text">{{ tool.name }}</p>
+                            <p>{{ tool.description|truncatechars:20 }}</p>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <hr class="section-divider">
+        <div class="container2">
+            <h1 class="section-title">{% trans "Books" %}</h1>
+            <div class="row">
+                {% for book in latest_book %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ book.title }}</h5>
+                            <p class="card-text">{{ book.name }}</p>
+                            <a class="btn btn-success" href="{{ book.file.url }}" download>{% trans "Download PDF" %}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <hr class="section-divider">
+        <div class="container2">
+            <h1 class="section-title">{% trans "Articles" %}</h1>
+            <div class="row">
+                {% for blog in latest_blog %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ blog.title }}</h5>
+                            <p class="card-text">{{ blog.sub_title }}</p>
+                            <a href="{% url 'blog_list' blog.slug %}" class="btn btn-secondary social-icon">{% trans "Read More" %}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

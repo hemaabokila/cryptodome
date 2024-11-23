@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-21 17:09+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: .\project\settings.py:73
+msgid "English"
+msgstr "الانجليزية"
+
+#: .\project\settings.py:74
+msgid "Arabic"
+msgstr "العربية"
+
+#: .\project\settings.py:XX
+msgid "Books"
+msgstr "كتب"
+
+#: .\project\settings.py:XX
+msgid "Tools"
+msgstr "ادوات"
+
+#: .\project\settings.py:XX
+msgid "Python"
+msgstr "بايثون"
+
+#: .\project\settings.py:XX
+msgid "Codes"
+msgstr "اكواد"
+
+#: .\project\settings.py:XX
+msgid "Top Libraries"
+msgstr "اهم المكتبات"
+
+#: .\project\settings.py:XX
+msgid "Courses"
+msgstr "كورسات"
+
+#: .\project\settings.py:XX
+msgid "All Rights Reserved"
+msgstr "جميع الحقوق محفوظة"
+
+#: .\project\settings.py:XX
+msgid "Search Results"
+msgstr "نتائج البحث"
+
+#: .\project\settings.py:XX
+msgid "Next"
+msgstr "التالي"
+
+#: .\project\settings.py:XX
+msgid "Page"
+msgstr "الصفحة"
+
+#: .\project\settings.py:XX
+msgid "Previous"
+msgstr "السابق"
+
+#: .\project\settings.py:XX
+msgid "No results match your search."
+msgstr "لا توجد نتائج تطابق البحث الخاص بك"
+
+#: .\project\settings.py:XX
+msgid "Hacking Tools"
+msgstr "اداوات الاختراق"
+
+#: .\project\settings.py:XX
+msgid "Latest Videos"
+msgstr "احدث الفيديوهات"
+
+#: .\project\settings.py:XX
+msgid "Articles"
+msgstr "مقالات"
+
+#: .\project\settings.py:XX
+msgid "Read More"
+msgstr "اقرأ المزيد"
+
+#: .\project\settings.py:XX
+msgid "Download PDF"
+msgstr "تحميل  PDF"
+
+#: .\project\settings.py:XX
+msgid "Download Video"
+msgstr "تحميل الفيديو"
+
+#: .\project\settings.py:XX
+msgid "There are no videos for this course currently available."
+msgstr "لا توجد فيديوهات لهذا الكورس حالياً."
+
+#: .\project\settings.py:XX
+msgid "Video Summary"
+msgstr "ملخص الفيديو"
+
+#: .\project\settings.py:XX
+msgid "Task"
+msgstr "التكليف"
+
+#: .\project\settings.py:XX
+msgid "Support Me"
+msgstr "ادعمنى"
+
+#: .\project\settings.py:XX
+msgid "To support me via Vodafone Cash, please transfer to the following number."
+msgstr "لدعمي عبر فودافون كاش، يرجى التحويل إلى الرقم التالي"
+
+#: .\project\settings.py:XX
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#: .\project\settings.py:XX
+msgid "Name"
+msgstr "الاسم"
+
+#: .\project\settings.py:XX
+msgid "Email"
+msgstr "الايميل"
+
+#: .\project\settings.py:XX
+msgid "Subject"
+msgstr "الموضوع"
+
+#: .\project\settings.py:XX
+msgid "Message"
+msgstr "الرسالة"
+
+#: .\project\settings.py:XX
+msgid "Send"
+msgstr "ارسال"
+
+#: .\project\settings.py:XX
+msgid "Thank you"
+msgstr "شكرا لك"
+
+#: .\project\settings.py:XX
+msgid "Language"
+msgstr "اللغة"
+
+#: .\project\settings.py:XX
+msgid "There are no courses currently available."
+msgstr "لا توجد كورسات حالياً."
+
+#: .\project\settings.py:XX
+msgid "Contact"
+msgstr "اتصال"
+
+#: .\project\settings.py:XX
+msgid "YouTube subscribers count"
+msgstr "عدد المشتركين فى اليوتيوب"
+
+#: .\project\settings.py:XX
+msgid "YouTube views count"
+msgstr "عدد مشاهدات اليوتيوب"
+
+#: .\project\settings.py:XX
+msgid "Today's website visitors"
+msgstr "زوار موقعنا اليوم"
+
+
+
+#: .\project\settings.py:XX
+msgid "Your message has been sent successfully. We will get back to you as soon as possible."
+msgstr "تم إرسال رسالتك بنجاح. سنقوم بالرد عليك في أقرب وقت ممكن"

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container mt-5">
+    <div class="section2">
+        <div class="container2"><div class="row mt-4">
+            <div class="col-md-3">
+                <ul class="list-group" id="library-list">
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div id="library-info" class="d-none">
+                    <h1 class="section-title" id="library-name"></h1>
+                    <pre><code class="language-python" id="library-example"></code></pre>
+                    <pre id="library-install"><code class="language-python"></code></pre>
+                    <pre id="library-description" ><code class="language-python"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
